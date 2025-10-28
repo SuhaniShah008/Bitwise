@@ -1,33 +1,41 @@
-# VennSet
+# Bitwise
 
-This Java program demonstrates how to use **sets** to perform basic operations similar to a **Venn diagram** — finding intersections (common elements) and unique elements between two sets.
+This Java program is an interactive console quiz that helps users practice **bitwise operations**.  
+It randomly generates two numbers, chooses a bitwise operator, and hides one part of the expression — the user must correctly fill in the blank.
 
 ## Features
-- Creates two sets of strings (`setA` and `setB`)
-- Finds:
-  - Intersection (common elements)
-  - Elements unique to `setA`
-  - Elements unique to `setB`
-- Prints all results to the console
+- Randomly generates two numbers between **0 and 10**
+- Randomly selects one of the following bitwise operators:
+  - `|` (OR)
+  - `&` (AND)
+  - `^` (XOR)
+  - `<<` (Left Shift)
+- Randomly hides:
+  - The first number
+  - The operator
+  - The second number
+  - Or the final answer
+- Prompts the user to guess the missing value and checks if it’s correct
 
-## Example Output
-Set A: [banana, cherry, apple]
-Set B: [banana, cherry, date, fig]
-Duplicates (Intersection): [banana, cherry]
-Only in A: [apple]
-Only in B: [date, fig]
-
+## Example Interaction
+_ ^ 3 = 6
+Enter what you put in the blank space: 5
+The answer is right!
+or
+8 & 4 = _
+Enter what you put in the blank space: 0
+The answer is right!
 
 ## How to Run
-1. Save the file as `VennSet.java`
+1. Save the file as `Bitwise.java`
 2. Open a terminal in the same directory and compile the program:
-javac VennSet.java
-3. Run the compiled class:
-java VennSet
-
+javac Bitwise.java
+3. Run the program:
+java Bitwise
 
 ## Concepts Demonstrated
-- **Set operations in Java**
-- **Intersection** using `retainAll()`
-- **Difference** using `removeAll()**
-- **HashSet** implementation for unique elements
+- **Bitwise operations** (`|`, `&`, `^`, `<<`)
+- **Random number generation**
+- **Conditional statements** (`if`/`else`)
+- **User input handling** using `Scanner`
+- **Switch-case** logic for operator selection
